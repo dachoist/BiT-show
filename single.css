@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+header,
+footer {
+  background-color: grey;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+footer {
+  font-size: 20px;
+}
+header h1 {
+  font-size: 24px;
+}
+
+header input {
+  padding: 5px;
+  border: 3px solid white;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 5px 0px;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("https://www.institutfrancais.de/sites/default/files/styles/w960h540/public/2019-11/bureau%20cinema%20et%20medias.jpg?itok=SHfxzwmL");
+  background-size: cover;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+.divone {
+  border: none;
+  margin: 40px;
+  width: 40%;
+}
+.divone > h2 {
+  text-align: center;
+}
+
+.divone > img {
+  width: 400px;
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
+
+.divone > p {
+  margin: 20px;
+}
+.divone > h3 {
+  text-align: left;
+}
+.divtwo {
+  border: none;
+  margin-top: 140px;
+}
+.divtwo > div {
+  margin-top: 40px;
+}
+.divtwo > div > ul > li {
+  list-style-type: none;
+}
+
+.divtwo > h3 {
+  text-align: left;
+}
+
+.divtwo > .descdiv > ul > li {
+  list-style-type: none;
+}

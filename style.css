@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header,
+footer {
+  background-color: grey;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+
+}
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+
+}
+.watchlist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px 20px;
+  cursor: pointer;
+}
+.listafilmova1{
+  display: none;
+}
+.listafilmova{
+  position: fixed;
+  height: 100vh;
+  width: 400px;
+  left: 0;
+  top: 60px;
+}
+footer {
+  font-size: 20px;
+}
+header h1 {
+  font-size: 24px;
+}
+
+header input {
+  padding: 5px 10px;
+  border: 3px solid white;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  box-shadow: 0px 0px 5px 0px;
+  font-weight: 700;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown > ul {
+  position: absolute;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 75%;
+  list-style-type: none;
+  color: black;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.dropdown > ul > li {
+  padding: 5px 10px;
+}
+.dropdown > ul > li:hover {
+  cursor: pointer;
+  background-color: wheat;
+}
+
+header button {
+  /* display: none; */
+  padding: 5px 10px;
+  border: 3px solid black;
+  border-radius: 25px;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 5px 0px;
+  font-weight: 700;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  margin-top: 60px;
+  background-image: url("https://ichef.bbci.co.uk/news/976/cpsprodpb/18459/production/_117371499_gettyimages-1215359845.jpg");
+  background-size: 100vw;
+}
+
+.wrapper {
+  position: relative;
+  margin-top: 30px;
+  min-height: 480px;
+}
+
+main > div {
+  margin: 20px 10px;
+  border: 3px dotted gray;
+  border-radius: 25px;
+  width: 200px;
+  min-height: 420px;
+  text-align: center;
+  background-color: transparent;
+  
+}
+
+main > .wrapper > div > button {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  margin-top: 80px;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 30px 0px black;
+  border: none;
+  border-radius: 50px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+main > div:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 0px red;
+  background-color: black;
+  transition: 0.2s;
+  transform: scale(1.1);
+}
+
+div > h2 {
+  width: 100%;
+  color: white;
+  background-color: black;
+  margin-top: 40px;
+}
+
+div > img {
+  margin: 20px 0px;
+  border-radius: 25px;
+  width: 150px;
+}
